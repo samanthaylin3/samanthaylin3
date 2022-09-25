@@ -1,0 +1,236 @@
+:root {
+    --color1: #666b3a;
+    --color2: #aca69f;
+    --color3: #fff;
+    --color4: #adab76;
+    --color5: #aca69f;
+    --color6: #605c64;
+    --color7: #0f211a;
+
+}
+
+.container-fluid {
+    padding: 3% 15%;
+}
+
+a {
+    color: var(--color4);
+}
+
+a:hover {
+    color: var(--color1);
+}
+
+h3 {
+    color: var(--color7);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.0rem;
+    font-weight: bold;
+}
+
+h4 {
+    color: var(--color7);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+h5 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+b {
+    font-weight: 400;
+}
+
+p {
+    color: var(--color6);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+footer {
+    padding: 7% 15%;
+}
+
+#email {
+    color: var(--color1);
+    font-size: 1.0rem;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+/* Navigation Bar */
+
+.navbar, .title {
+    padding: 0 0 4.0rem;
+}
+
+.navbar-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.navbar-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+}
+
+/* About page */
+#introduction {
+    padding: 7% 15%;
+}
+
+#details {
+    padding-bottom: 20px;
+}
+
+.resume {
+    padding: 7% 15%;
+}
+
+/* About Gallery */
+.gallery {
+    position: relative;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+  
+.content {
+    opacity: 0;
+    font-size: 1.0rem;
+    position: absolute;
+    color: var(--color3);
+    background-color: var(--color2);
+    width: 80%;
+    height: 80%;
+    padding: 2px 10px 10px 10px;
+    transition: all 400ms ease;
+    justify-content: center;
+    text-align: center;
+}
+  
+.gallery .content:hover {
+    opacity: 1;
+    transform: translateY(10px)
+    
+}
+  
+.gallery .content .text {
+    height: 0;
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+}
+  
+.gallery .content:hover .text {
+    opacity: 1;
+    transform: translateY(350px);
+}
+
+#gallery {
+    background-color:  var(--color3);
+    position: relative;
+}
+
+.description {
+    font-size: 0.8rem;
+}
+
+
+/* project page */
+.projects {
+    padding: 7% 15%;
+    margin: 10px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#projects-img {
+    padding: 70px 0px 70px 0px;
+}
+
+#projects-content {
+    padding: 60px 50px;
+}
+
+.category1 {
+    padding: 7% 15%;
+}
+
+.category1, .category2, .iCook-intro {
+    padding: 7% 15%;
+    padding-bottom: 20px;
+}
+
+/* Make the image fully responsive */
+.carousel-item img{
+    width: auto;
+    height: 400;
+    max-height: 400;
+    margin: auto; 
+    display: block;
+}
+
+.carousel {
+    padding: 20px 0px 20px 0px;
+}
+
+/* Footer */
+#social-icon {
+    display: flex;
+    justify-content: center;
+    padding: 7% 15%;
+    width: 100%
+}
+
+.social-icon {
+    margin: 20px 10px;
+    font-size: 1.2rem;
+}
+
+#contacts {
+    display: flex;
+    padding: 7% 15%;
+}
+.contacts {
+    padding: 0px 10px;
+}
+
+@media (min-width: 600px) {
+    #social-icon {
+      display: none;
+    }
+  }
+
+@media (max-width: 599px) {
+    .contacts {
+      display: none;
+    }
+    #projects-img {
+        padding: 0px 0px;
+    }
+    
+    #projects-content {
+        padding: 0px 0px;
+    }
+    #projects {
+        padding: 60px  10px;
+    }
+    #projects-title {
+        padding-top: 30px;
+    }
+
+  }
